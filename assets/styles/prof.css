@@ -1,0 +1,125 @@
+
+
+			#mainFunctions{
+				animation: bounceInDown;
+			  animation-duration: 1s;
+			}
+
+
+			#body {
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  height: 100vh;
+			  background: #f39c12;
+			  opacity: 1;
+			  animation: bounceInUp;
+			  animation-duration: 1s;
+			  
+			}
+			h1 {
+			  margin: 0 0 0.25em;
+			}
+			/* Reset Select */
+			select {
+			  -webkit-appearance: none;
+			  -moz-appearance: none;
+			  -ms-appearance: none;
+			  appearance: none;
+			  outline: 0;
+			  box-shadow: none;
+			  border: 0 !important;
+			  background: #2c3e50;
+			  background-image: none;
+			}
+			/* Remove IE arrow */
+			select::-ms-expand {
+			  display: none;
+			}
+			/* Custom Select */
+			.select {
+			  position: relative;
+			  display: flex;
+			  width: 20em;
+			  height: 3em;
+			  line-height: 3;
+			  background: #2c3e50;
+			  overflow: hidden;
+			  border-radius: .25em;
+			}
+			select {
+			  flex: 1;
+			  padding: 0 .5em;
+			  color: #fff;
+			  cursor: pointer;
+			}
+			/* Arrow */
+			.select::after {
+			  content: '\25BC';
+			  position: absolute;
+			  top: 0;
+			  right: 0;
+			  padding: 0 1em;
+			  background: #34495e;
+			  cursor: pointer;
+			  pointer-events: none;
+			  -webkit-transition: .25s all ease;
+			  -o-transition: .25s all ease;
+			  transition: .25s all ease;
+			}
+			/* Transition */
+			.select:hover::after {
+			  color: #f39c12;
+			}
+
+			td{
+				text-align: center;
+			}
+
+			#decon{
+				position: absolute;
+				left: 87%;
+				 top: 2%;
+
+			}
+			#mainFunctions,#cancel{
+				display: none;
+			}
+			#nav-seance{
+				display: inline-flex;
+			}
+			
+			#listePresence{
+				margin: 20px;
+				display: none;
+			}
+			#tb , #example{
+				width: 100%;
+			}
+			
+			#dt{
+				position: relative;
+				left: 25%;
+				top: 25%;
+				display:inline-flex;
+			}
+			#dtdiv{
+				display: inline-block;
+			}
+			#getStudentsByDate{
+				height: 35px;
+				text-align: center;
+				padding: 20px 10px;
+				line-height: 0px;
+
+			}
+			#listeByDate , #listeRecapulative, #listeRecapulativeDiv{
+				width: 75%;
+			}
+			#listeByDateDiv{
+				width: 60%;
+				position: relative;
+				left: 0%;
+				top: 70%;
+			}

@@ -1,0 +1,401 @@
+
+	body {
+		margin: 0;
+		  padding: 0;
+		  font-family: sans-serif;
+		color: #9a9a9a;
+		font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+		font-size: 12pt;
+		font-weight: 400;
+		line-height: 1.65;
+		-webkit-text-size-adjust: none;
+		line-height: 1;
+		background: #fff;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	
+
+	.inner {
+		max-width: 75em;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap; 
+		justify-content: space-around;
+		z-index: 1111;
+	}
+	
+
+	section.wrapper, article.wrapper {
+		padding: 6em 0;
+	}
+
+	
+	.flex {
+		
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+			.flex.flex-2 article {
+				width: 50%;
+			}
+
+		
+	.image.round img {
+			border-radius: 100%;
+		}
+		
+	#banner {
+		padding: 8em 0 9em 0;
+		background-image: url(../pictures/ensam_cover.PNG);
+		background-size: cover;
+		background-position: bottom;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		text-align: center;
+		position: relative;
+	}
+
+		#banner:before {
+			content: '';
+			background: rgba(75, 75, 93, 0.7);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		#banner .inner {
+			
+			position: relative;
+			z-index: 10005;
+			padding-top: 8em;
+		}
+
+		#banner h1 {
+			font-size: 3em;
+			font-weight: 400;
+			color: #fff;
+			line-height: 1em;
+			margin: 0 0 1em 0;
+			padding: 0;
+		}
+@media screen and (max-width: 700px)
+{
+	.flex {
+		
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+
+	}
+	.flex.flex-2 article {
+				width: 100%;
+				margin-top: 90px;
+			}
+
+}
+
+.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: transparent;
+		box-shadow: inset 0 0 0 3px #6cc091;
+		color: #6cc091 !important;
+		border-radius: 30px;
+		border: 0;
+		cursor: pointer;
+		display: inline-block;
+		font-size: .75em;
+		font-weight: 400;
+		height: 3.75em;
+		line-height: 3.85em;
+		letter-spacing: 2px;
+		padding: 0 4em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+	input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			background-color: rgba(108, 192, 145, 0.15);
+		}
+		form
+	{
+		  max-width: 800px ;
+		  margin: 10px auto ;
+		  padding: 10px 20px ;
+		  background: #f4f7f8 ;
+		  border-radius: 8px 
+		  		
+	}
+	
+	.hide
+	{
+		display: none;
+	}
+	fieldset
+	{
+		
+  		border: none;
+	}
+	
+
+
+	legend {
+	  font-size: 1.4em;
+	  margin-bottom: 10px;
+	}
+	input
+	{
+		border: 3px solid black;
+		text-align: center;
+		height: 25px;
+		width: 200px;
+	}
+	table	{
+		padding: auto;
+	}
+	td
+	{
+		padding-right: 80px;
+
+	}
+	.radio
+	{
+		height: 14px;
+		width: 14px;
+	}
+	.show-hide {
+    display: block;
+}
+#header
+{
+	z-index: 55555555;
+}
+
+#header {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  background: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+  height: 3.25rem;
+  left: 0;
+  line-height: 3.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10001; }
+  #header > .logo {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 1.25rem;
+    text-decoration: none; }
+  #header > nav > a {
+    color: inherit;
+    display: inline-block;
+    padding: 0 0.75rem;
+    text-decoration: none; }
+    #header > nav > a:hover {
+      color: #ffffff; }
+    #header > nav > a[href="#menu"] {
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+      #header > nav > a[href="#menu"]:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important; }
+      #header > nav > a[href="#menu"]:before {
+        content: '\f0c9';
+        margin: 0 0.5rem 0 0; }
+    #header > nav > a + a[href="#menu"]:last-child {
+      border-left: solid 1px rgba(255, 255, 255, 0.25);
+      margin-left: 0.5rem;
+      padding-left: 1.25rem; }
+    #header > nav > a:last-child {
+      padding-right: 1.25rem; }
+    @media screen and (max-width: 736px) {
+      #header > nav > a {
+        padding: 0 0.5rem; }
+        #header > nav > a + a[href="#menu"]:last-child {
+          margin-left: 0.25rem;
+          padding-left: 1rem; }
+        #header > nav > a:last-child {
+          padding-right: 1rem; } }
+
+@media screen and (max-width: 980px) {
+  body {
+    padding-top: 44px; }
+
+  #header {
+    height: 44px;
+    line-height: 44px; } }
+@media screen and (max-width: 480px) {
+  #header {
+    min-width: 320px; } }
+
+
+#header
+{
+	z-index: 55555;
+}
+#des
+{
+	color: white;
+}
+
+.box{
+  width: 300px;
+  padding: 40px;
+  background: #191919;
+  
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+
+/*animation avec css*/
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+form
+{
+  animation: bounceInDown 2s;
+}
+.hide
+{
+  display: none;
+  
+
+}
+#deco:hover
+{
+  background-color: grey;
+}
+.input
+{
+  width: 20px;
+  height: 15px;
+}
+
+#copy
+{
+	background-color: black;
+	text-align: center;height: 40px;
+}
+#copy>p
+{
+	position: relative;top: 30%;
+}
